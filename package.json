@@ -1,13 +1,14 @@
 {
   "name": "profile-website",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "style": "prettier --write --plugin-search-dir=. ."
   },
   "dependencies": {
     "@astrojs/tailwind": "^3.0.1",
