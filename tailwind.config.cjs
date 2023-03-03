@@ -5,7 +5,10 @@ module.exports = {
     extend: {
       fontFamily: {
         "open-sans": ["Open Sans", "sans-serif"],
-        "inter": ["Inter", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+      },
+      textUnderlineOffset: {
+        3: "3px",
       },
     },
   },
