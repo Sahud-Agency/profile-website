@@ -4,15 +4,15 @@ import Counter from "./Counter.astro";
 <section class="px-6 py-4">
   <div class="grid grid-cols-2">
     <div class="">
-      <h3>Let's see our amazing stats</h3>
+      <h3 class="font-sans text-2xl text-neutral-500 underline underline-offset-8 py-5">Let's see our amazing stats</h3>
       <h1 class="font-inter text-4xl font-light text-red-700">
-        Great <span class="font-extrabold">technology</span> really help us to achieve objective and customer satisfaction
+        Great <span class="font-extrabold">technology</span> really help <br> us to achieve objective and <br> customer satisfaction
       </h1>
     </div>
-    <div class="flex gap-4 justify-center">
-      <Counter count={20} desc="Succesful Projects" />
-      <Counter count={20} desc="Succesful Projects" />
-      <Counter count={20} desc="Succesful Projects" />
+    <div class="flex gap-4 justify-center pt-16 m-auto">
+      <Counter count={14} desc="Succesful Projects" />
+      <Counter count={14} desc="Satisfied Clients" />
+      <Counter count={14} desc="Technology Stacks" />
     </div>
   </div>
 </section>
