@@ -1,0 +1,32 @@
+---
+const { fromColor, toColor, image, title, desc, technology } = Astro.props;
+---
+
+<div class=`bg-gradient-to-r from-${fromColor} to-${toColor} rounded-2xl my-6`>
+  <div class="lg:flex flex-row xl:p-12 lg:p-8">
+    <div class="lg:hidden visible basis-full">
+      <img src=`/assets/img/${image}` alt={image} class="rounded-t-2xl" />
+    </div>
+    <div class="2xl:basis-2/3 lg:basis-3/5 basis-full text-white 2xl:mr-32 lg:mr-6 mr-0">
+      <div class="lg:p-0 p-10">
+        <h1 class="font-bold text-3xl">{title}</h1>
+        <p class="text-xl font-open-sans pt-3 pb-6">
+          {desc}
+        </p>
+        <h3 class="text-xl font-open-sans font-bold py-4">Technology</h3>
+        {
+          technology.map((data) => {
+            return (
+              <span class="mr-3 mb-4 inline-block rounded-lg bg-[#BFBFBF]/50 px-3 py-1 font-open-sans text-lg">
+                {data}
+              </span>
+            );
+          })
+        }
+      </div>
+    </div>
+    <div class="lg:block hidden 2xl:basis-1/3 basis-2/5 my-auto">
+      <img src=`/assets/img/${image}` alt={image} class="min-w-full" />
+    </div>
+  </div>
+</div>
