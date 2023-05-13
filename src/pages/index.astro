@@ -3,18 +3,24 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero/index.astro";
 import Navbar from "../components/Navbar/index.astro";
 import Stats from "../components/Stats/index.astro";
+import Solutions from "../components/Solutions/index.astro";
+import Portfolios from "../components/Portfolios/index.astro";
+import Platforms from "../components/Platforms/index.astro";
+import Footer from "../components/Footer/index.astro";
 ---
 
 <Layout title="Welcome to Astro.">
   <Navbar />
-  <div class="container mx-auto">
-    <main>
-      <Hero
-        title="We can provide your digital needs right away"
-        subtitle="We are utilizing and transforming technology"
-        desc="Empowering Businesses through Software Solutions " 
-      />
-      <Stats/>
-    </main>
-  </div>
+  <main>
+    <Hero
+      title="We can provide your digital needs right away"
+      subtitle="We are utilizing and transforming technology"
+      desc="Empowering Businesses through Software Solutions "
+    />
+    <Stats />
+    <Solutions />
+    <Portfolios />
+    <Platforms />
+  </main>
+  <Footer />
 </Layout>
