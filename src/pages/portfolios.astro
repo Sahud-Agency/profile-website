@@ -1,0 +1,139 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar/index.astro";
+import Portfolio from "../components/Portfolios/Portfolio.astro";
+import Footer from "../components/Footer/index.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <Navbar />
+  <main>
+    <section class="container mx-auto px-6 py-6 my-8 md:my-16">
+      <h2 class="font-inter text-2xl md:text-4xl font-light text-red-700 text-center">
+        Our <span class="font-extrabold">Portfolios</span>
+      </h2>
+      <h3 class="font-open-sans text-center text-red-700 text-2xl py-3">
+        Here are several projects that we've worked on recently
+      </h3>
+      <div class="flex justify-center py-6">
+        <div class="w-44 border-red-600 border-b-2 md:border-b-4 border-t-2 md:border-t-4 rounded-full"></div>
+      </div>
+      <div class="my-6">
+        <Portfolio
+          fromColor="[#73221D]"
+          toColor="[#F33543]"
+          image="AudodoCoffee.png"
+          title="Audodoco"
+          desc="Audodoco is a highly innovative and effective promotional tool for Audodo Coffee Company, offering a comprehensive digital platform that showcases the company's unique and high-quality products. The Laravel 8 framework ensures that the platform is highly responsive, reliable, and efficient, providing a seamless user experience for coffee lovers worldwide."
+          technology={["Laravel", "MySQL"]}
+        />
+        <Portfolio
+          fromColor="[#0D0D0D]"
+          toColor="[#8F8F8F]"
+          image="Narkobot.png"
+          title="Narkobot"
+          desc="Narkobot is an innovative and highly effective tool in the fight against drug abuse, providing an interactive medium for information dissemination and public consultation. Using NLP approaches and React Native ensures that the platform is highly responsive and intuitive, making it an effective tool for promoting public awareness and education about the dangers of drug abuse, especially among younger generations."
+          technology={["Artificial Intelligence", "Python", "React Native"]}
+        />
+        <Portfolio
+          fromColor="[#73221D]"
+          toColor="[#F33543]"
+          image="Buana.png"
+          title="BUANA"
+          desc="BUANA is a branding website with powerful tool in the fight against drug abuse, providing an informative and engaging platform for public education and awareness. Built using Laravel and React JS, the website is highly flexible and scalable, ensuring that it can continue to serve the needs of the organization and its mission for years to come."
+          technology={["Laravel", "React JS", "PostgreSQL"]}
+        />
+        <Portfolio
+          fromColor="[#0D0D0D]"
+          toColor="[#8F8F8F]"
+          image="Vrede.png"
+          title="Vrede"
+          desc="Vrede is an innovative and essential tool in the fight against cyberbullying. By leveraging machine learning technology and a modern user interface, Vrede can promote positive communication and create a safer online environment for all users."
+          technology={["Fast API", "Vue", "Artificial Intelligence", "Python", "PostgreSQL"]}
+        />
+        <Portfolio
+          fromColor="[#73221D]"
+          toColor="[#F33543]"
+          image="Savani.png"
+          title="Savani"
+          desc='Savani is a website application dedicated to helping wild animals in society. The name Savani comes from "Save Animal", and the application aims to provide a platform where animal lovers can easily find and share information about abandoned and wild animals in need of help.'
+          technology={["CI4", "MySQL"]}
+        />
+        <Portfolio
+          fromColor="[#0D0D0D]"
+          toColor="[#8F8F8F]"
+          image="Section.png"
+          title="Section"
+          desc="Section website application is a testament to the power of good design and excellent programming. The application provides a seamless and engaging user experience that will impress all visitors by utilising the latest tools and techniques in web development."
+          technology={["React JS", "Hapi JS", "MySQL"]}
+        />
+        <Portfolio
+          fromColor="[#73221D]"
+          toColor="[#F33543]"
+          image="Sippro.png"
+          title="Sistem Informasi Pendukung Program Studi (SIPPro)"
+          desc="SIPPro is a web-based application that serves as a powerful support system for computerized activities in a study program. With its extensive set of features, SIPPro enables users to carry out a variety of tasks, including recording meeting minutes, academic guidance, study program work agenda, and more."
+          technology={["CI4", "MySQL"]}
+        />
+        <Portfolio
+          fromColor="[#0D0D0D]"
+          toColor="[#8F8F8F]"
+          image="Plasion.png"
+          title="Plasion"
+          desc="Plasion is a mobile application built to connect plasma donors with those in need. With the current COVID-19 pandemic, finding patient plasma donors has become crucial. Plasion was created to help make the process easier and faster by providing a platform for users to find and contact plasma donors in their area."
+          technology={["Java", "Android Studio"]}
+        />
+        <Portfolio
+          fromColor="[#73221D]"
+          toColor="[#F33543]"
+          image="Socioplant.png"
+          title="Socioplant"
+          desc="Socioplant is a mobile application designed to help owners take better care of their ornamental plants. The Socioplant app provides information and solutions for plant owners' common issues, such as watering, fertilizing, and pest control. It is built using the Java programming language and Firebase as data storage media and authentication."
+          technology={["Java", "Android Studio"]}
+        />
+        <Portfolio
+          fromColor="[#0D0D0D]"
+          toColor="[#8F8F8F]"
+          image="Iblue.png"
+          title="iblue"
+          desc="Iblue is a desktop application designed to manage libraries efficiently. This application was developed using the Java programming language, and JavaFX is used as the graphical user interface toolkit. Iblue allows librarians to manage their book collection, track book loans, and returns, and maintain a record of library patrons."
+          technology={["Java", "JavaFX"]}
+        />
+        <Portfolio
+          fromColor="[#73221D]"
+          toColor="[#F33543]"
+          image="Kompetegram.png"
+          title="Kompetegram"
+          desc="Kompetegram is a community-oriented website that promotes learning and sharing technical knowledge. The website is built using React JS and Hapi JS, making it user-friendly and easy to navigate. In addition to being a platform for knowledge-sharing, Kompetegram hosts various events such as webinars, projects, and quizzes, allowing members to showcase their skills and learn from others."
+          technology={["React JS", "Hapi JS", "MySQL"]}
+        />
+        <Portfolio
+          fromColor="[#0D0D0D]"
+          toColor="[#8F8F8F]"
+          image="Up&co.png"
+          title="up&co"
+          desc="up&co is a progressive web application (PWA) that promotes a food restaurant. This website uses the latest web technologies, allowing users to access it on any device with internet connectivity. up&co offers a seamless user experience with a clean and modern design highlighting the restaurant's menu and promotions. "
+          technology={["HTML", "CSS", "JavaScript", "Node JS"]}
+        />
+        <Portfolio
+          fromColor="[#73221D]"
+          toColor="[#F33543]"
+          image="Codarel.png"
+          title="Codarel"
+          desc="Codarel is an e-commerce website dedicated to selling clothing for men. The website offers a wide range of products, including shirts, pants, jackets, and accessories, all designed to cater to modern man's fashion needs. The website was built using the PHP programming language and is optimized for a seamless user experience."
+          technology={["PHP", "MySQL"]}
+        />
+        <Portfolio
+          fromColor="[#0D0D0D]"
+          toColor="[#8F8F8F]"
+          image="Taksi19.png"
+          title="TAKSI-19"
+          desc="TAKSI-19 is a comprehensive system that utilizes computer vision and IoT to anticipate the spread of COVID-19. With its advanced features and dynamic dashboard website, TAKSI-19 is an ideal solution for any organization that wants to implement adequate safety measures and help prevent the spread of COVID-19."
+          technology={["Artificial Intelligence", "PHP", "HTML", "CSS", "JavaScript", "IoT"]}
+        />
+        <div class=`hidden bg-gradient-to-r from-[#0D0D0D] to-[#8F8F8F] rounded-2xl my-6`></div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
