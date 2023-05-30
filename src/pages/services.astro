@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar/index.astro";
-import Portfolio from "../components/Portfolios/Portfolio.astro";
+import Services from "../components/Services/index.astro";
 import Footer from "../components/Footer/index.astro";
 ---
 
@@ -13,7 +13,9 @@ import Footer from "../components/Footer/index.astro";
         Our <span class="font-extrabold">Services</span>
       </h2>
       <h3 class="font-open-sans text-center text-red-700 text-2xl py-3">
-        If you have any questions or inquiries about our company or services, <br />please don’t hesitate to contact us
+        We specialize in custom software development, web and mobile application <br class="xl:inline-block hidden" /> development,
+        software maintenance and support, DevOps and cloud services, <br class="xl:inline-block hidden" /> and quality assurance
+        and testing
       </h3>
       <div class="flex justify-center py-6">
         <div class="w-44 border-red-600 border-b-2 md:border-b-4 border-t-2 md:border-t-4 rounded-full"></div>
@@ -22,54 +24,73 @@ import Footer from "../components/Footer/index.astro";
         <div class=`hidden bg-gradient-to-r from-[#0D0D0D] to-[#8F8F8F] rounded-2xl my-6`></div>
       </div>
       <div class="grid lg:grid-cols-3 grid-cols-1 2xl:gap-20 xl:gap-6 gap-3 pt-6 pb-16 text-center">
-        <div class="bg-white rounded-2xl border-2">
-          <img src="/assets/img/Email.svg" alt="Email" class="mx-auto pt-12" />
-          <h3 class="text-3xl font-bold py-3">Email Us</h3>
-          <p class="font-open-sans text-xl text-neutral-500 xl:mx-12 lg:mx-6 md:mx-16 mx-6">
-            Email us for general queries, including marketing and partnership opportunities.
-          </p>
-          <h3 class="text-xl text-red-700 font-bold py-3">sahudagency@gmail.com</h3>
-          <div class="pt-6 pb-10 mb-6">
-            <a
-              href="mailto:sahudagency@gmail.com"
-              class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-semibold rounded-lg text-xl text-center md:mr-0 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 font-open-sans px-12 py-4"
-              >Email Now</a
-            >
-          </div>
-        </div>
-        <div class="bg-white rounded-2xl border-2">
-          <img src="/assets/img/Call.svg" alt="Call" class="mx-auto pt-12" />
-          <h3 class="text-3xl font-bold py-3">Call Us</h3>
-          <p class="font-open-sans text-xl text-neutral-500 xl:mx-12 lg:mx-6 md:mx-16 mx-6">
-            Call us to speak to a member of our team. We are always happy to help.
-          </p>
-          <br class="2xl:inline-block lg:hidden" />
-          <h3 class="text-xl text-red-700 font-bold py-3">+62 858 1742 2004</h3>
-          <div class="pt-6 pb-10 mb-6">
-            <a
-              href="tel:+6285817422004"
-              class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-semibold rounded-lg text-xl text-center md:mr-0 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 font-open-sans px-12 py-4"
-              >Call Now</a
-            >
-          </div>
-        </div>
-        <div class="bg-white rounded-2xl border-2">
-          <img src="/assets/img/Chat.svg" alt="Chat" class="mx-auto pt-12" />
-          <h3 class="text-3xl font-bold py-3">Chat Us</h3>
-          <p class="font-open-sans text-xl text-neutral-500 xl:mx-12 lg:mx-6 md:mx-16 mx-6">
-            Have any question about our services? Talk with us directly using WhatsApp
-          </p>
-          <h3 class="text-xl text-red-700 font-bold py-3">wa.me/6285817422004</h3>
-          <div class="pt-6 pb-10 mb-6">
-            <a
-              href="https://wa.me/6285817422004"
-              class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-semibold rounded-lg text-xl text-center md:mr-0 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 font-open-sans px-12 py-4"
-              >Chat Now</a
-            >
-          </div>
-        </div>
+        <Services
+          image="FrontEnd.svg"
+          title="Front-End Development"
+          desc="Front-end developers create the user interface and user experience for digital platforms. They use technologies like HTML, CSS, and JavaScript to design and build the visual and interactive components that users directly interact with."
+        />
+        <Services
+          image="BackEnd.svg"
+          title="Back-End Development"
+          desc="Back-end developers focus on building the server-side and database components that power applications. They handle data storage, processing, and business logic, ensuring smooth functionality and integration with the front-end."
+        />
+        <Services
+          image="FullStack.svg"
+          title="Full-Stack Development"
+          desc="Full-stack developers are proficient in both front-end and back-end development. They have a comprehensive understanding of the entire development process and can work on all layers of an application, from the user interface to the server-side implementation."
+        />
+        <Services
+          image="Mobile.svg"
+          title="Mobile Development"
+          desc="Mobile developers specialize in creating applications specifically designed for mobile devices, such as smartphones and tablets. They develop native or cross-platform apps using technologies like Java, Kotlin, Swift, or frameworks like React Native or Flutter."
+        />
+        <Services
+          image="MachineLearning.svg"
+          title="Machine Learning"
+          desc="Machine learning involves developing algorithms and models that enable computers to learn and make predictions or decisions based on data. Machine learning experts use statistical techniques and algorithms to build intelligent systems capable of recognizing patterns and making automated decisions."
+        />
+        <Services
+          image="DataScience.svg"
+          title="Data Science"
+          desc="Data scientists analyze and interpret large and complex datasets to extract insights and drive decision-making. They use statistical analysis, machine learning, and data visualization techniques to uncover patterns, trends, and correlations that can be used to solve business problems."
+        />
+        <Services
+          image="SoftwareMaintenance.svg"
+          title="Software Maintenance"
+          desc="Software maintenance involves updating, modifying, and fixing issues in existing software applications. Maintenance teams ensure the software remains functional, secure, and up to date with evolving user needs and technological advancements."
+        />
+        <Services
+          image="SoftwareTesting.svg"
+          title="Software Testing"
+          desc="Software testers verify the functionality, usability, and quality of software applications. They design and execute test cases, identify bugs and issues, and work closely with development teams to ensure the software meets the required standards and specifications."
+        />
+        <Services
+          image="QualityAssurance.svg"
+          title="Software Quality Assurance"
+          desc="Quality assurance (QA) teams are responsible for establishing and implementing quality standards, processes, and methodologies to ensure that software products meet the desired level of quality. They focus on preventing defects and ensuring that best practices are followed throughout the development lifecycle."
+        />
+        <Services
+          image="DevOps.svg"
+          title="DevOps & Cloud Services"
+          desc="DevOps professionals bridge the gap between development and operations teams. They streamline the software delivery process, automate deployments, and manage infrastructure using cloud services like Amazon Web Services (AWS) or Microsoft Azure to enhance collaboration, efficiency, and scalability."
+        />
+        <Services
+          image="SystemAnalyst.svg"
+          title="System Analyst"
+          desc="System analysts analyze an organization's requirements and translate them into system specifications. They work closely with stakeholders to understand their needs, evaluate existing systems, propose solutions, and ensure the successful implementation of technology projects."
+        />
+        <Services
+          image="DatabaseAnalyst.svg"
+          title="Database Analyst"
+          desc="Database analysts design, develop, and maintain databases to support software applications. They ensure data integrity, performance, and security, and optimize database structures to enable efficient storage and retrieval of information."
+        />
+        <Services
+          image="ItConsultant.svg"
+          title="IT Consultant"
+          desc="IT consultants provide strategic advice and guidance on technology-related matters. They assess an organization's IT infrastructure, identify areas for improvement, recommend solutions, and assist in the implementation of technology initiatives to support business objectives."
+        />
       </div>
+      <Footer />
     </section>
   </main>
-  <Footer />
 </Layout>
